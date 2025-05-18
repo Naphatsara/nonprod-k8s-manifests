@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-deploy
+  name: payment-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: simple-deploy
+      app: payment-deploy
   template:
     metadata:
       labels:
-        app: simple-deploy
+        app: payment-deploy
     spec:
       containers:
         - image: nginx

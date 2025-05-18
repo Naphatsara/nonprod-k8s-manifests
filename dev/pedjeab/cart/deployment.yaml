@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-deploy
+  name: cart-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: simple-deploy
+      app: cart-deploy
   template:
     metadata:
       labels:
-        app: simple-deploy
+        app: cart-deploy
     spec:
       containers:
         - image: nginx
